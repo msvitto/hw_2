@@ -43,7 +43,7 @@ print_r(longest($a,$b));
 //"GTAT" --> "CATA"
 
 $dna = 'ATTGC';
-function DNA_strand($dna) {
+function DNA_strand(string $dna):string {
     $replaceArray = array(
         'A'=>'T',
         'T'=>'A',
