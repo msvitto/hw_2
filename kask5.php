@@ -22,7 +22,7 @@ echo findShort($str);
 
 $a="ssa";
 $b="ss";
-function longest($a, $b){
+function longest(string $a,string $b):string{
     $c= $a.$b;
     $uniqueChars=array_unique(str_split($c));
     sort($uniqueChars);
@@ -30,3 +30,5 @@ function longest($a, $b){
 
 }
 print_r(longest($a,$b));
+
+
