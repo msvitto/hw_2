@@ -12,15 +12,3 @@ class Product{
     }
 }
 
-// ф-ція для виводу
-function console(Product $productObject): void
-{
-    echo $productObject;
-}
-
-//створити об'єкт
-$product1 = new Product(14741, 255.5);
-$product2 = new Product(14747, 325.7);
-
-
-console($product2);
