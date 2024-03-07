@@ -82,3 +82,21 @@ function rounders(int $value): int {
 
 echo rounders(1445);
 
+//https://www.codewars.com/kata/58846d50f54f021d90000012/train/php
+//For value = 15, the output should be 20 .For value = 1234, the output should be 1000.
+//1234 -> 1230 -> 1200 -> 1000.
+//For value = 1445, the output should be 2000.
+//1445 -> 1450 -> 1500 -> 2000.Input/Output [input] integer value
+//A positive integer.Constraints: 1 ≤ value ≤ 108
+//[output] an integerThe rounded number.
+
+function rounders(int $value): int {
+    for ($i = 0; $i < strlen($value); $i++) {
+        $value = round($value, -$i);
+    }
+
+    return $value;
+}
+
+
+echo rounders(1445);
