@@ -1,7 +1,5 @@
 <?php
 
-<?php
-
 
 //https://www.codewars.com/kata/59377c53e66267c8f6000027/train/php
 //Introduction
@@ -130,12 +128,24 @@ function timeCorrect(string $timestring): string
 
 
     $result = [$hours, $minutes, $seconds];
-    for ($i = 0; $i < 3; $i++) {
-        if (strlen((string)$result[$i]) <= 1) {
-            $result[$i] = '0' . $result[$i];
-        }
-    }
+
+
+
     return implode(':', $result);
 }
 
 echo timeCorrect('08:12:01');
+echo "<br>";
+
+function random(array $arr):mixed
+{
+    $count = count($arr);
+    $randomIndex = rand(0, $count-1);
+    return $arr[$randomIndex];
+}
+function random1()
+{
+    echo random([101,205,322,447,58,698]);
+}
+//print_r(sprintf("Випадковий елемент масиву: %d", random([101,205,322,447,58,698])));
+random1();

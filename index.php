@@ -8,7 +8,9 @@
     <title>Document</title>
     </head>
 <body>
-
+<?php
+    include 'header.php';
+?>
 <script src="index.js"></script>
 </body>
 </html>
